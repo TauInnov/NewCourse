@@ -12,6 +12,10 @@ if [[ -n $(git status -s) ]]; then
     # Commit changes
     git commit -m "$commit_message"
 
+    #pull changes                                                               
+    git config pull.rebase false                                                
+    git pull 
+
     # Push changes to remote repository
     git push origin main  # Change 'main' to your branch name if different
 else
