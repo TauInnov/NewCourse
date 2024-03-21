@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -379,6 +379,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this">What is This?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">1. Course Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-the-basic-structure-of-a-book">This is the basic structure of a Book:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-topics">2. Editing topics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-changes">3. Apply Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-topics">4. Creating new topics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-notebooks">Additional Notebooks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><span class="xref myst"></span></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><span class="xref myst"></span></a></li>
@@ -403,21 +411,67 @@ document.write(`
 <p>This template is an explanatory guide for creating your own webcourse.<br>
 This course template is based on Barak Hirshberg’s Molecular Simulations course template,
 take a look: <a class="reference external" href="https://barakhirshberg.github.io/MolecularSimulations/intro.html">Molecular Simulations</a></p>
-<p>In this tutorial you will learn how to open, edit, publish and share a course in the Jupyter Lab environment, in order to create a Jupyter Book for your course.<br>
-On the left side of the screen you may find the contents of this Jupyter Book. Each <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file represents a web page in the Jupyter Book. <br> The <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files you can see on the left side of this screen include additional information you may use to edit your Jupyter Book pages. <br>
-After creating and editing content pages for your course notebooks, you can publish the Book and access your course online.</p>
-<p>To enter edit mode, you need to double click the current cell. This will allow you to make changes, try it!
-Clicking the play button on the top edit bar will make the changes take effect. You can also use the short key <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code> to apply changes.
-Adding new cells can be done by using the second from right symbol in this current cell when in edit mode.
-Alternatively you can click in the left margin of this sell, then press <code class="docutils literal notranslate"><span class="pre">B</span></code> for a following new cell or <code class="docutils literal notranslate"><span class="pre">A</span></code> for adding it before the current cell.</p>
+<section id="what-is-this">
+<h2>What is This?<a class="headerlink" href="#what-is-this" title="Link to this heading">#</a></h2>
+<p>In this tutorial you will learn how to open, edit, publish and share a course in the Jupyter Lab environment, in order to create a Jupyter Book for your course.<br></p>
+</section>
+<section id="course-structure">
+<h2>1. Course Structure<a class="headerlink" href="#course-structure" title="Link to this heading">#</a></h2>
+<p>A Jupytre Book is an open-source tool used for creating interactive, web-based books and documents from computational notebooks. It allows authors to combine text, code, mathematical equations, visualizations, and other multimedia content into a cohesive narrative that can be easily shared and published online.</p>
+<section id="this-is-the-basic-structure-of-a-book">
+<h3>This is the basic structure of a Book:<a class="headerlink" href="#this-is-the-basic-structure-of-a-book" title="Link to this heading">#</a></h3>
+<ul>
+<li><h4 class="rubric" id="book-directory">Book Directory:</h4>
+</li>
+</ul>
+<p>This is the main directory (found at the left of the screeen) containing all the files and folders related to your course Book.</p>
+<ul>
+<li><h4 class="rubric" id="chapters-and-sections">Chapters and Sections:</h4>
+</li>
+</ul>
+<p>Each chapter of your book typically corresponds to a Jupyter notebook file (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or a Markdown file (<code class="docutils literal notranslate"><span class="pre">.md</span></code>). These files contain the actual content of your book, including text, code, and visualizations.</p>
+<ul>
+<li><h4 class="rubric" id="table-of-contents-toc-yml">Table of Contents (toc.yml):</h4>
+</li>
+</ul>
+<p>A <code class="docutils literal notranslate"><span class="pre">.yml</span></code> file that defines the structure of your book, including chapters, sections, and subsections. It serves as the roadmap for navigating through your book.</p>
+<ul>
+<li><h4 class="rubric" id="configuration-files">Configuration Files:</h4>
+</li>
+</ul>
+<p>These files define various settings and options for your book, such as theme customization, plugins, and metadata. Common configuration files include _config.yml for general settings and _toc.yml for customizing the table of contents.</p>
+<ul>
+<li><h4 class="rubric" id="output-files">Output Files:</h4>
+</li>
+</ul>
+<p>When you build your book (We will exaplin later how), Jupyter Book generates HTML pages and other output formats (e.g., PDF, ePub) based on your content and configuration. These output files are stored in a the <code class="docutils literal notranslate"><span class="pre">_build</span></code> directory at the top of the topics to the left.</p>
+<ul>
+<li><h4 class="rubric" id="scripts">Scripts:</h4>
+</li>
+</ul>
+<p>Building, publishing and uploading your Book to the web might seem tricky at first. To make things easier we creates several scripts with indicative names that do the work for you. These scripts can be found in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code> directory.</p>
+</section>
+</section>
+<section id="editing-topics">
+<h2>2. Editing topics<a class="headerlink" href="#editing-topics" title="Link to this heading">#</a></h2>
+<p>To enter edit mode, you will need to double click the current cell. This will allow you to make changes, try it!</p>
 <p>The notebooks supports two cell forms. on the top of this page, on the edit bar you will find a <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> sign. Clicking it will open a selection menu with two important cell options:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Markdown</span></code> : suitable for text and math.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Code</span></code>: integrated code environment supporting python, with code execution and output display.
-You can learn more about these code cells in the additional notebooks.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Code</span></code>: integrated code environment supporting python, with code execution and output display.</p></li>
 </ul>
+</section>
+<section id="apply-changes">
+<h2>3. Apply Changes<a class="headerlink" href="#apply-changes" title="Link to this heading">#</a></h2>
+<p>Clicking the play button <img alt="title" src="_images/play.png" /> on the top edit bar will make the changes take effect. You can also use the short key <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code> to apply changes. Be aware that these changes are locally</p>
+</section>
+<section id="creating-new-topics">
+<h2>4. Creating new topics<a class="headerlink" href="#creating-new-topics" title="Link to this heading">#</a></h2>
+<p>Adding new cells can be done by using the third symbol from right <img alt="title" src="_images/add.png" /> in this current cell when in edit mode.
+Alternatively you can click in the left margin of this sell, then press <code class="docutils literal notranslate"><span class="pre">B</span></code> for a following new cell or <code class="docutils literal notranslate"><span class="pre">A</span></code> for adding it before the current cell.</p>
 <p>A template python notebook already exists in this directory, under the name Template.ipynb. You may edit it and use it as your first course page.
 Additionally, you can open a new notebook by clicking the plus sign on top of this page, select the notebook python3 launcher and rename the new notebook by right clicking its tab.</p>
+</section>
 <section id="additional-notebooks">
 <h2>Additional Notebooks<a class="headerlink" href="#additional-notebooks" title="Link to this heading">#</a></h2>
 <section id="id1">
@@ -510,6 +564,14 @@ Additionally, you can open a new notebook by clicking the plus sign on top of th
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-this">What is This?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">1. Course Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-the-basic-structure-of-a-book">This is the basic structure of a Book:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-topics">2. Editing topics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-changes">3. Apply Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-new-topics">4. Creating new topics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-notebooks">Additional Notebooks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><span class="xref myst"></span></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><span class="xref myst"></span></a></li>
