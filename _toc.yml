@@ -5,7 +5,7 @@ format: jb-book
 root: Welcome
 chapters:
 - file: Math
-- file: Code
+- file: Code_and_plots
 - file: Table
 - file: Image
 - file: ActiveLearning
