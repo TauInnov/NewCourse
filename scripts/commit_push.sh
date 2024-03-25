@@ -3,8 +3,9 @@
 # Check if there are any changes to add
 if [[ -n $(git status -s) ]]; then
     # Add all changes
-    git add .
-    git reset -- _build
+    git add ../
+    git reset -- ../_build
+    git reset -- ../.ipynb_checkpoints
 
     # Prompt for commit message
     read -p "Enter commit message: " commit_message
