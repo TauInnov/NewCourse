@@ -4,8 +4,9 @@
 format: jb-book
 root: Welcome
 chapters:
-- file: Math
-- file: Code_and_plots
-- file: Table
-- file: Image
-- file: ActiveLearning
+- file: NonTextContent/Markdown
+- file: NonTextContent/Math
+- file: NonTextContent/CodeAndPlots
+- file: NonTextContent/Table
+- file: NonTextContent/Image
+- file: NonTextContent/ActiveLearning
