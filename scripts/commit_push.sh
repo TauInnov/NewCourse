@@ -1,12 +1,9 @@
 #!/bin/bash
-
+ 
 # Check if there are any changes to add
 if [[ -n $(git status -s) ]]; then
-    # Add all changes
-    git add ../
-    git reset -- ../_build
-    git reset $(git diff --name-only --cached | grep *.ipynb_checkpoints*)
-    git reset $(git diff --name-only --cached | grep *~*)
+    # Add all changes but certain filetypes
+    git add --all ../. ':!../_build/*' ':!../*.ipynb_checkpoints/*' ':!*.sh~'
 
     # Prompt for commit message
     read -p "Enter commit message: " commit_message
