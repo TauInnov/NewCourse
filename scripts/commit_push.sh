@@ -5,7 +5,8 @@ if [[ -n $(git status -s) ]]; then
     # Add all changes
     git add ../
     git reset -- ../_build
-    git reset -- ../.ipynb_checkpoints
+    git reset $(git diff --name-only --cached | grep *.ipynb_checkpoints*)
+    git reset $(git diff --name-only --cached | grep *~*)
 
     # Prompt for commit message
     read -p "Enter commit message: " commit_message
