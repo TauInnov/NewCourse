@@ -4,7 +4,7 @@
 if ! command -v ghp-import &> /dev/null
 then
     echo "ghp-import is not installed. installing ghp-import first."
-    pip install ghp-import
+    #pip install ghp-import
     exit
 fi
 
