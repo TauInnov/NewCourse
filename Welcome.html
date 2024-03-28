@@ -460,8 +460,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-table-of-contents-toc-yml-file">9. Editing the Table of Contents (_toc.yml file)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-course-locally-build">10. Update the course locally (build)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preview-the-website">11. Preview the website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">12. Publish book online</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-and-track-your-changes-with-git">13. Save and track your changes with git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-and-track-your-changes-with-git">12. Save and track your changes with git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">13. Publish book online</a></li>
 </ul>
             </nav>
         </div>
@@ -569,8 +569,19 @@ If you wish to directly open the course preview in your browser:</p>
 <li><p>double click the file <code class="docutils literal notranslate"><span class="pre">index.html</span></code>.</p></li>
 </ul>
 </section>
+<section id="save-and-track-your-changes-with-git">
+<h2>12. Save and track your changes with git<a class="headerlink" href="#save-and-track-your-changes-with-git" title="Link to this heading">#</a></h2>
+<p>Saving and tracking your work with GitHub is one of the most popular ways to manage your coding projects (including this course).
+With the script we provide, you can easily save your work and track the changes you made. If you’re working with others, Git helps you stay coordinated by letting you see their updates and share your own. The process of saving you change to GitHub is called commiting and pushing.</p>
+<p>To commit and push your changes:</p>
+<ul class="simple">
+<li><p>Click the plus sign <code class="docutils literal notranslate"><span class="pre">+</span></code> in the tab menu to open a new tab and under the <code class="docutils literal notranslate"><span class="pre">Other</span></code> section select <code class="docutils literal notranslate"><span class="pre">terminal</span></code>.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">scripts</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to access the scripts folder.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">./commit_push.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to add the changes to the github repository. The script will then ask you to add a comment describing the changes you have made. Write your comment, then push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> again for the script to push it online.</p></li>
+</ul>
+</section>
 <section id="publish-book-online">
-<h2>12. Publish book online<a class="headerlink" href="#publish-book-online" title="Link to this heading">#</a></h2>
+<h2>13. Publish book online<a class="headerlink" href="#publish-book-online" title="Link to this heading">#</a></h2>
 <p>Jupyter Book makes it easy to publish your work online with the ‘ghp-import’ package. This script helps you quickly put your Jupyter Notebooks, Markdown files, and other content onto GitHub Pages, a place where you can share your work with others. Instead of worrying about the technical stuff, like how to convert your files or where to put them, the script takes care of it for you:</p>
 <ul class="simple">
 <li><p>Click the plus sign <code class="docutils literal notranslate"><span class="pre">+</span></code> in the tab menu to open a new tab and under the <code class="docutils literal notranslate"><span class="pre">Other</span></code> section select <code class="docutils literal notranslate"><span class="pre">terminal</span></code>.</p></li>
@@ -581,17 +592,6 @@ If you wish to directly open the course preview in your browser:</p>
 <p><strong>Try publishing your course website now! Then go to the follwing address:</strong>
 (https://tauinnov.github.io/NewCourse/)
 Please be patient, this action can take several minutes before the site appears online.</p>
-</section>
-<section id="save-and-track-your-changes-with-git">
-<h2>13. Save and track your changes with git<a class="headerlink" href="#save-and-track-your-changes-with-git" title="Link to this heading">#</a></h2>
-<p>Saving and tracking your work with GitHub is one of the most popular ways to manage your coding projects (including this course).
-With the script we provide, you can easily save your work and track the changes you made. If you’re working with others, Git helps you stay coordinated by letting you see their updates and share your own. The process of saving you change to GitHub is called commiting and pushing.</p>
-<p>To commit and push your changes:</p>
-<ul class="simple">
-<li><p>Click the plus sign <code class="docutils literal notranslate"><span class="pre">+</span></code> in the tab menu to open a new tab and under the <code class="docutils literal notranslate"><span class="pre">Other</span></code> section select <code class="docutils literal notranslate"><span class="pre">terminal</span></code>.</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">scripts</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to access the scripts folder.</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">./commit_push.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to add the changes to the github repository. The script will then ask you to add a comment describing the changes you have made. Write your comment, then push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> again for the script to push it online.</p></li>
-</ul>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -664,8 +664,8 @@ With the script we provide, you can easily save your work and track the changes 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-table-of-contents-toc-yml-file">9. Editing the Table of Contents (_toc.yml file)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-course-locally-build">10. Update the course locally (build)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preview-the-website">11. Preview the website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">12. Publish book online</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-and-track-your-changes-with-git">13. Save and track your changes with git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-and-track-your-changes-with-git">12. Save and track your changes with git</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">13. Publish book online</a></li>
 </ul>
   </nav></div>
 
