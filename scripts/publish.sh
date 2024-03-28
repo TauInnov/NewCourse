@@ -3,8 +3,8 @@
 # Check if ghp-import is installed
 if ! command -v ghp-import &> /dev/null
 then
-    echo "ghp-import is not installed. Please install ghp-import first."
-    echo "pip install ghp-import"
+    echo "ghp-import is not installed. installing ghp-import first."
+    pip install ghp-import
     exit
 fi
 
