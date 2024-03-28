@@ -294,18 +294,18 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#save-and-track-your-changes">
+   10. Save and track your changes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#update-the-course-locally-build">
-   10. Update the course locally (build)
+   11. Update the course locally (build)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preview-the-website">
-   11. Preview the website
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#save-and-track-your-changes">
-   12. Save and track your changes
+   12. Preview the website
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -384,18 +384,18 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#save-and-track-your-changes">
+   10. Save and track your changes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#update-the-course-locally-build">
-   10. Update the course locally (build)
+   11. Update the course locally (build)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#preview-the-website">
-   11. Preview the website
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#save-and-track-your-changes">
-   12. Save and track your changes
+   12. Preview the website
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -479,8 +479,19 @@ This template has the Welcome page as its root, which is the first page users wi
 Files that are not mentioned in the table of contents will not appear as part of the course website, but you can still edit them and they will saved in your repository.</p>
 <p><strong>Click the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file now and add a the new topic you just created to the course by adding <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">file:</span> <span class="pre">Topic</span> <span class="pre">1</span></code> in a new line.</strong></p>
 </div>
+<div class="section" id="save-and-track-your-changes">
+<h2>10. Save and track your changes<a class="headerlink" href="#save-and-track-your-changes" title="Permalink to this headline">¶</a></h2>
+<p>Saving and tracking your work with GitHub is one of the most popular ways to manage your coding projects (including this course).
+With the script we provide, you can easily save your work and track the changes you made. If you’re working with others, Git helps you stay coordinated by letting you see their updates and share your own. The process of saving you change to GitHub is called commiting and pushing.</p>
+<p>To commit and push your changes:</p>
+<ul class="simple">
+<li><p>Click the plus sign <code class="docutils literal notranslate"><span class="pre">+</span></code> in the tab menu to open a new tab and under the <code class="docutils literal notranslate"><span class="pre">Other</span></code> section select <code class="docutils literal notranslate"><span class="pre">terminal</span></code>.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">scripts</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to access the scripts folder.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">./commit_push.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to add the changes to the github repository. The script will then ask you to add a comment describing the changes you have made. Write your comment, then push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> again for the script to push it online.</p></li>
+</ul>
+</div>
 <div class="section" id="update-the-course-locally-build">
-<h2>10. Update the course locally (build)<a class="headerlink" href="#update-the-course-locally-build" title="Permalink to this headline">¶</a></h2>
+<h2>11. Update the course locally (build)<a class="headerlink" href="#update-the-course-locally-build" title="Permalink to this headline">¶</a></h2>
 <p>Next, we would like to update the changes you have made to this course and look at a preview of the website before publishing it.
 On the left side of your screen, in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code> directory, you will find multiple auxiliary bash scripts. These scripts will allow you to handle and manage the updates to this course, without being familiar with Linux.</p>
 <ul class="simple">
@@ -493,7 +504,7 @@ The new opened window allow you to run scripts through the command line.</p></li
 <p><strong>Try locally building your website now.</strong></p>
 </div>
 <div class="section" id="preview-the-website">
-<h2>11. Preview the website<a class="headerlink" href="#preview-the-website" title="Permalink to this headline">¶</a></h2>
+<h2>12. Preview the website<a class="headerlink" href="#preview-the-website" title="Permalink to this headline">¶</a></h2>
 <p>After calling the <code class="docutils literal notranslate"><span class="pre">./build.sh</span></code> script, local <code class="docutils literal notranslate"><span class="pre">.html</span></code> files will be built. You can preview your website by accessing the following file in your course directory:</p>
 <ul class="simple">
 <li><p>Access the <code class="docutils literal notranslate"><span class="pre">_build</span></code> folder, then enter the <code class="docutils literal notranslate"><span class="pre">html</span></code> folder.</p></li>
@@ -506,17 +517,6 @@ If you wish to directly open the course preview in your browser:</p>
 <li><p>open the course folder from your computer start menu.</p></li>
 <li><p>enter the following directories <code class="docutils literal notranslate"><span class="pre">_build</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">html</span></code></p></li>
 <li><p>double click the file <code class="docutils literal notranslate"><span class="pre">index.html</span></code>.</p></li>
-</ul>
-</div>
-<div class="section" id="save-and-track-your-changes">
-<h2>12. Save and track your changes<a class="headerlink" href="#save-and-track-your-changes" title="Permalink to this headline">¶</a></h2>
-<p>Saving and tracking your work with GitHub is one of the most popular ways to manage your coding projects (including this course).
-With the script we provide, you can easily save your work and track the changes you made. If you’re working with others, Git helps you stay coordinated by letting you see their updates and share your own. The process of saving you change to GitHub is called commiting and pushing.</p>
-<p>To commit and push your changes:</p>
-<ul class="simple">
-<li><p>Click the plus sign <code class="docutils literal notranslate"><span class="pre">+</span></code> in the tab menu to open a new tab and under the <code class="docutils literal notranslate"><span class="pre">Other</span></code> section select <code class="docutils literal notranslate"><span class="pre">terminal</span></code>.</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">scripts</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to access the scripts folder.</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">./commit_push.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to add the changes to the github repository. The script will then ask you to add a comment describing the changes you have made. Write your comment, then push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> again for the script to push it online.</p></li>
 </ul>
 </div>
 <div class="section" id="publish-book-online">
