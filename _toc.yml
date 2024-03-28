@@ -3,10 +3,12 @@
 
 format: jb-book
 root: Welcome
-chapters:
-- file: NonTextContent/Markdown
-- file: NonTextContent/Math
-- file: NonTextContent/CodeAndPlots
-- file: NonTextContent/Table
-- file: NonTextContent/Image
-- file: NonTextContent/ActiveLearning
+parts:
+    - caption: Additional Content
+      chapters:
+        - file: AdditionalContent/Markdown
+        - file: AdditionalContent/Math
+        - file: AdditionalContent/CodeAndPlots
+        - file: AdditionalContent/Table
+        - file: AdditionalContent/Image
+        - file: AdditionalContent/ActiveLearning
