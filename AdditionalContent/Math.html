@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Active Learning, Notes, warnings, and others &#8212; Web Course</title>
+    <title>Math Expressions &#8212; Molecular Simulations - 0351-4057</title>
   
   
   
@@ -57,10 +57,13 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'NonTextContent/ActiveLearning';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'AdditionalContent/Math';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Image" href="Image.html" />
+    <link rel="next" title="Code blocks and outputs" href="CodeAndPlots.html" />
+    <link rel="prev" title="Headings, Styling and Bibliography" href="Markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -149,8 +152,8 @@
       
     
     
-    <img src="../_static/tau_logo.jpg" class="logo__image only-light" alt="Web Course - Home"/>
-    <script>document.write(`<img src="../_static/tau_logo.jpg" class="logo__image only-dark" alt="Web Course - Home"/>`);</script>
+    <img src="../_static/tau_logo.jpg" class="logo__image only-light" alt="Molecular Simulations - 0351-4057 - Home"/>
+    <script>document.write(`<img src="../_static/tau_logo.jpg" class="logo__image only-dark" alt="Molecular Simulations - 0351-4057 - Home"/>`);</script>
   
   
 </a></div>
@@ -175,14 +178,15 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Content</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Markdown.html">Headings, Styling and Bibliography</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="Math.html">Math Expressions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Math Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CodeAndPlots.html">Code blocks and outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Table.html">Table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Image.html">Image</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Active Learning, Notes, warnings, and others</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ActiveLearning.html">Active Learning, Notes, warnings, and others</a></li>
 </ul>
 
     </div>
@@ -229,6 +233,73 @@
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/TauInnov/book/master/v2/gh/TauInnov/NewCourse/master?urlpath=tree/AdditionalContent/Math.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/TauInnov/NewCourse/blob/master/AdditionalContent/Math.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -237,7 +308,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/TauInnov/NewCourse" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -254,7 +325,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FNonTextContent/ActiveLearning.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/TauInnov/NewCourse/issues/new?title=Issue%20on%20page%20%2FAdditionalContent/Math.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +355,7 @@
       
       
       
-      <li><a href="../_sources/NonTextContent/ActiveLearning.ipynb" target="_blank"
+      <li><a href="../_sources/AdditionalContent/Math.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -366,7 +437,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Active Learning, Notes, warnings, and others</h1>
+    <h1>Math Expressions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,44 +451,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="active-learning-notes-warnings-and-others">
-<h1>Active Learning, Notes, warnings, and others<a class="headerlink" href="#active-learning-notes-warnings-and-others" title="Link to this heading">#</a></h1>
-<p>Jupyter Book allows you to make the learning more interactive and versatile. You can highlight a particular block of text that exists slightly apart from the narrative of your page. To make things easier, just copy the required block:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note!</p>
-</div>
-<p>Similarly, you may use</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Here is a warning!</p>
-</div>
-<div class="admonition-here-s-your-admonition admonition">
-<p class="admonition-title">Here’s your admonition</p>
-<p>Here’s the admonition content</p>
-</div>
-<p>or use special style blocks:</p>
-<div class="tip admonition">
-<p class="admonition-title">This admonition was styled…</p>
-<p>With a tip class!</p>
-</div>
-<p>and even dropdown blocks for active learning:</p>
-<div class="tip admonition">
-<p class="admonition-title">Active learning</p>
-<p>here is the question.</p>
-</div>
-<div class="dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>here is the solution!</p>
-</div>
-<p>Remember these special blocks will be visible only in the reader mode.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="math-expressions">
+<h1>Math Expressions<a class="headerlink" href="#math-expressions" title="Link to this heading">#</a></h1>
+<p>Latex equations can also be included in the notebooks in Markdown cells, as inline mathematical expressions <span class="math notranslate nohighlight">\(e^{i\pi} + 1 = 0\)</span>, using the <code class="docutils literal notranslate"><span class="pre">$</span></code> special symbol:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$e^{i\pi}</span> <span class="pre">+</span> <span class="pre">1</span> <span class="pre">=</span> <span class="pre">0$</span></code></p>
+<p>Or as a new cell. If you need to number equations for references, use the math directive. the following format</p>
+<div class="math notranslate nohighlight" id="equation-my-label">
+<span class="eqno">(1)<a class="headerlink" href="#equation-my-label" title="Link to this equation">#</a></span>\[w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\]</div>
+<p>will generate</p>
+<p><img alt="title" src="../_images/equation.png" /></p>
+<p>You can then link to it from within your text (and across pages!) using the label that you’ve provided by using the <code class="docutils literal notranslate"><span class="pre">{eq}</span></code> role. For example: <br></p>
+<ul class="simple">
+<li><p>A link to an equation directive: <code class="docutils literal notranslate"><span class="pre">{eq}</span></code>my_label`</p></li>
+</ul>
+<p>Keep in mind the equations appearance in this environment is limited. To actually see the user view you will need to <code class="docutils literal notranslate"><span class="pre">./build.sh</span></code> the course again (using the script mentioned in the Welcome page) and view the reader mode.</p>
 </section>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "TauInnov/NewCourse",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -426,7 +480,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./NonTextContent"
+            path: "./AdditionalContent"
         },
         predefinedOutput: true
     }
@@ -444,13 +498,22 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Image.html"
+       href="Markdown.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Image</p>
+        <p class="prev-next-title">Headings, Styling and Bibliography</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="CodeAndPlots.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Code blocks and outputs</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
