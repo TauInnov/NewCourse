@@ -459,10 +459,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-new-topics-lessons">8. Adding new topics/lessons</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-table-of-contents">9. Editing the Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-and-track-your-changes">10. Save and track your changes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-course-locally-build">11. Update the course locally (build)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preview-the-website">12. Preview the website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">13. Publish book online</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exiting-the-codespace-environment">14. Exiting the Codespace environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-jupyter-book">11. Setup Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-course-locally-build">12. Update the course locally (build)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preview-the-website">13. Preview the website</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">14. Publish book online</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exiting-the-codespace-environment">15. Exiting the Codespace environment</a></li>
 </ul>
             </nav>
         </div>
@@ -543,20 +544,25 @@ Files that are not mentioned in the table of contents will not appear as part of
 <section id="save-and-track-your-changes">
 <h2>10. Save and track your changes<a class="headerlink" href="#save-and-track-your-changes" title="Link to this heading">#</a></h2>
 <p>Saving and tracking your work with GitHub is one of the most popular ways to manage your coding projects (including this course).
-On the left side of the screen click the <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code> button <img alt="sourcecontrol" src="_images/github.jpg" />. This will open a left menu. In the message line, add a short message describing the changes you have made, then push the green <code class="docutils literal notranslate"><span class="pre">Commit</span></code> button. ON the message prompt click <code class="docutils literal notranslate"><span class="pre">Yes</span></code>, the push the new green button <code class="docutils literal notranslate"><span class="pre">Publish</span></code>. A new menu will open, Rename your course repository and publish it to github, publicly or privately (private may work only under Pro github account). ** Try it now!**</p>
+On the left side of the screen click the <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code> button <img alt="sourcecontrol" src="_images/github.jpg" />. This will open a left menu. In the message line, add a short message describing the changes you have made, then push the green <code class="docutils literal notranslate"><span class="pre">Commit</span></code> button. ON the message prompt click <code class="docutils literal notranslate"><span class="pre">Yes</span></code>, the push the new green button <code class="docutils literal notranslate"><span class="pre">Publish</span></code>. A new menu will open, Rename your course repository and publish it to github. The opened menu allows you to create a private or public repository (private may work only under Pro github account). Note that setting your repository public will allow your students to access unpublished content of the course.</p>
+<p><strong>Try it now!</strong></p>
 <p>This is the first commit. from now on every time you wish to save changes, open the <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code> panel, commit your changes with a message, then push the green <code class="docutils literal notranslate"><span class="pre">Sync</span></code> button.</p>
 </section>
-<section id="update-the-course-locally-build">
-<h2>11. Update the course locally (build)<a class="headerlink" href="#update-the-course-locally-build" title="Link to this heading">#</a></h2>
-<p>Next, we would like to update the changes you have made to this course and look at a preview of the website before publishing it.
-On the left side of your screen, in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code> directory, you will find multiple auxiliary bash scripts. These scripts will allow you to handle and manage the updates to this course, without being familiar with Linux.</p>
-<p>First you will need to setup several packages:</p>
+<section id="setup-jupyter-book">
+<h2>11. Setup Jupyter Book<a class="headerlink" href="#setup-jupyter-book" title="Link to this heading">#</a></h2>
+<p>Before we can update the changes you have made to this course, we need to setup the Jupyter Book environment. This needs to be done <strong>only once</strong>, Codespaces will save your setup for future uses.</p>
 <ul class="simple">
 <li><p>Click the three lines button <img alt="threelines" src="_images/threelines.jpg" /> on the top left side of this page, select <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> then <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">terminal</span></code>. this will open a command line window.</p></li>
 <li><p>Type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">scripts</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to access the scripts folder.</p></li>
 <li><p>To setup the codespace, type <code class="docutils literal notranslate"><span class="pre">./setup.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
 </ul>
-<p>Building the course Book:</p>
+<p><strong>Setup the environment now.</strong></p>
+</section>
+<section id="update-the-course-locally-build">
+<h2>12. Update the course locally (build)<a class="headerlink" href="#update-the-course-locally-build" title="Link to this heading">#</a></h2>
+<p>Next, we would like to update the changes you have made to this course and look at a preview of the website before publishing it.
+On the left side of your screen, in the <code class="docutils literal notranslate"><span class="pre">scripts</span></code> directory, you will find multiple auxiliary bash scripts. These scripts will allow you to handle and manage the updates to this course, without being familiar with Linux.</p>
+<p>Build the course Website:</p>
 <ul class="simple">
 <li><p>on the opened terminal in the scripts directory, type <code class="docutils literal notranslate"><span class="pre">./clean.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to remove any existing build data.</p></li>
 <li><p>Next type <code class="docutils literal notranslate"><span class="pre">./build.sh</span></code> and push <code class="docutils literal notranslate"><span class="pre">Enter</span></code> for the changes to take effect.</p></li>
@@ -564,7 +570,7 @@ On the left side of your screen, in the <code class="docutils literal notranslat
 <p><strong>Try locally building your website now.</strong></p>
 </section>
 <section id="preview-the-website">
-<h2>12. Preview the website<a class="headerlink" href="#preview-the-website" title="Link to this heading">#</a></h2>
+<h2>13. Preview the website<a class="headerlink" href="#preview-the-website" title="Link to this heading">#</a></h2>
 <p>After calling the <code class="docutils literal notranslate"><span class="pre">./build.sh</span></code> script, local <code class="docutils literal notranslate"><span class="pre">.html</span></code> files will be built. You can preview your website by using the Preview Extension. First select the <code class="docutils literal notranslate"><span class="pre">Extensions</span></code> buttons <img alt="extensions" src="_images/extensions.jpg" /> to your left and type <code class="docutils literal notranslate"><span class="pre">Preview</span></code>. click <code class="docutils literal notranslate"><span class="pre">install</span></code> on the second extension <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Preview</span></code> by Microsoft.</p>
 <p>Next, click the left explorer button and access the following file in your course directory:</p>
 <ul class="simple">
@@ -575,7 +581,7 @@ If you wish to preview it full screen, select the 4 lines button in the preview 
 <p><strong>Try and preview the website before proceeding:</strong></p>
 </section>
 <section id="publish-book-online">
-<h2>13. Publish book online<a class="headerlink" href="#publish-book-online" title="Link to this heading">#</a></h2>
+<h2>14. Publish book online<a class="headerlink" href="#publish-book-online" title="Link to this heading">#</a></h2>
 <p>Jupyter Book makes it easy to publish your work online with the ‘ghp-import’ package. This script helps you quickly put your Jupyter Notebooks, Markdown files, and other content onto GitHub Pages, a place where you can share your work with others. Instead of worrying about the technical stuff, like how to convert your files or where to put them, the script takes care of it for you:</p>
 <ul class="simple">
 <li><p>Click the three lines button <img alt="threelines" src="_images/threelines.jpg" /> on the top left side of this page, select <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> then <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">terminal</span></code>. this will open a command line window.</p></li>
@@ -588,7 +594,7 @@ If you wish to preview it full screen, select the 4 lines button in the preview 
 Please be patient, this action can take several minutes before the site appears online.</p>
 </section>
 <section id="exiting-the-codespace-environment">
-<h2>14. Exiting the Codespace environment<a class="headerlink" href="#exiting-the-codespace-environment" title="Link to this heading">#</a></h2>
+<h2>15. Exiting the Codespace environment<a class="headerlink" href="#exiting-the-codespace-environment" title="Link to this heading">#</a></h2>
 <p>If you wish to exit the Codespace environment, you can just close this Tab. Github keeps the environment in an idle mode. You can access the Codespace environment again from your github account clicking the centered green button <code class="docutils literal notranslate"><span class="pre">Code</span></code> and selecting the <code class="docutils literal notranslate"><span class="pre">Codespace</span></code> tab.</p>
 </section>
 <div class="toctree-wrapper compound">
@@ -661,10 +667,11 @@ Please be patient, this action can take several minutes before the site appears 
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-new-topics-lessons">8. Adding new topics/lessons</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-table-of-contents">9. Editing the Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#save-and-track-your-changes">10. Save and track your changes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-course-locally-build">11. Update the course locally (build)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preview-the-website">12. Preview the website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">13. Publish book online</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exiting-the-codespace-environment">14. Exiting the Codespace environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-jupyter-book">11. Setup Jupyter Book</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-course-locally-build">12. Update the course locally (build)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preview-the-website">13. Preview the website</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publish-book-online">14. Publish book online</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exiting-the-codespace-environment">15. Exiting the Codespace environment</a></li>
 </ul>
   </nav></div>
 
