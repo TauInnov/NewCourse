@@ -1,3 +1,3 @@
 #!/bin/bash
-python3.12 -m pip install jupyter-book
-python3.12 -m pip install ghp-import
+pip install --user --force-reinstall jupyter-book
+pip install --user --force-reinstall ghp-import
